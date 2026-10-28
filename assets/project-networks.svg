@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="netBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a121e"/>
+      <stop offset="100%" stop-color="#070c14"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="360" rx="12" fill="url(#netBg)"/>
+  <rect x="1" y="1" width="598" height="358" rx="11" fill="none" stroke="#334155" stroke-opacity="0.4" stroke-width="1.5"/>
+
+  <!-- Window Header -->
+  <rect x="0" y="0" width="600" height="42" rx="12" fill="#111c2c"/>
+  <rect x="0" y="30" width="600" height="12" fill="#111c2c"/>
+  <line x1="0" y1="42" x2="600" y2="42" stroke="#334155" stroke-opacity="0.5" stroke-width="1"/>
+
+  <!-- Window Controls -->
+  <circle cx="24" cy="21" r="5" fill="#ef4444" fill-opacity="0.8"/>
+  <circle cx="42" cy="21" r="5" fill="#f59e0b" fill-opacity="0.8"/>
+  <circle cx="60" cy="21" r="5" fill="#10b981" fill-opacity="0.8"/>
+
+  <!-- Title -->
+  <text x="80" y="26" fill="#94a3b8" font-family="monospace" font-size="11">Cisco Packet Tracer • Topologia_VLAN_Subredes.pkt</text>
+
+  <!-- Badge Status -->
+  <rect x="470" y="10" width="115" height="22" rx="6" fill="#0284c7" fill-opacity="0.15" stroke="#0284c7" stroke-opacity="0.3"/>
+  <circle cx="482" cy="21" r="3" fill="#38bdf8"/>
+  <text x="492" y="25" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600">ROUTING : ACTIVE</text>
+
+  <!-- Canvas Grid Background -->
+  <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e293b" stroke-width="0.5" stroke-opacity="0.6"/>
+  </pattern>
+  <rect x="1" y="43" width="598" height="316" fill="url(#grid)"/>
+
+  <!-- Connection Lines (Links) -->
+  <!-- Router to Switch (Trunk) -->
+  <line x1="300" y1="105" x2="300" y2="175" stroke="#38bdf8" stroke-width="2.5" stroke-dasharray="6 3"/>
+  <rect x="306" y="130" width="85" height="18" rx="4" fill="#0f172a" fill-opacity="0.9" stroke="#334155" stroke-width="1"/>
+  <text x="312" y="143" fill="#38bdf8" font-family="monospace" font-size="9">Trunk (802.1Q)</text>
+
+  <!-- Switch to PC1 (VLAN 10) -->
+  <line x1="300" y1="195" x2="150" y2="270" stroke="#10b981" stroke-width="2"/>
+
+  <!-- Switch to PC2 (VLAN 20) -->
+  <line x1="300" y1="195" x2="450" y2="270" stroke="#a855f7" stroke-width="2"/>
+
+  <!-- TOPOLOGY DEVICES -->
+  <!-- Router (R1) -->
+  <g transform="translate(265, 60)">
+    <circle cx="35" cy="35" r="28" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <!-- Router arrows icon -->
+    <path d="M 23 35 L 47 35 M 41 29 L 47 35 L 41 41" stroke="#38bdf8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 47 35 L 23 35 M 29 29 L 23 35 L 29 41" stroke="#38bdf8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="26" y="78" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">Router R1</text>
+    <text x="7" y="92" fill="#94a3b8" font-family="monospace" font-size="9">192.168.1.1 (Gateway)</text>
+  </g>
+
+  <!-- Switch (SW1) -->
+  <g transform="translate(265, 175)">
+    <rect x="5" y="5" width="60" height="28" rx="5" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/>
+    <line x1="15" y1="19" x2="55" y2="19" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <text x="21" y="47" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">Switch Core</text>
+  </g>
+
+  <!-- VLAN 10 Zone -->
+  <g transform="translate(60, 230)">
+    <rect x="0" y="0" width="180" height="95" rx="8" fill="#10b981" fill-opacity="0.06" stroke="#10b981" stroke-dasharray="4 4"/>
+    <text x="12" y="20" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700">VLAN 10: ADMIN</text>
+    <rect x="68" y="28" width="44" height="32" rx="4" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+    <rect x="74" y="60" width="32" height="6" rx="2" fill="#334155"/>
+    <text x="75" y="48" fill="#e2e8f0" font-family="monospace" font-size="9">PC-01</text>
+    <text x="40" y="80" fill="#94a3b8" font-family="monospace" font-size="9">IP: 192.168.10.15/24</text>
+  </g>
+
+  <!-- VLAN 20 Zone -->
+  <g transform="translate(360, 230)">
+    <rect x="0" y="0" width="180" height="95" rx="8" fill="#a855f7" fill-opacity="0.06" stroke="#a855f7" stroke-dasharray="4 4"/>
+    <text x="12" y="20" fill="#c084fc" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700">VLAN 20: PRODUÇÃO</text>
+    <rect x="68" y="28" width="44" height="32" rx="4" fill="#1e293b" stroke="#a855f7" stroke-width="1.5"/>
+    <rect x="74" y="60" width="32" height="6" rx="2" fill="#334155"/>
+    <text x="75" y="48" fill="#e2e8f0" font-family="monospace" font-size="9">PC-02</text>
+    <text x="40" y="80" fill="#94a3b8" font-family="monospace" font-size="9">IP: 192.168.20.25/24</text>
+  </g>
+
+  <!-- Status Ping Indicator overlay -->
+  <g transform="translate(18, 55)">
+    <rect x="0" y="0" width="185" height="42" rx="6" fill="#090e17" fill-opacity="0.85" stroke="#1e293b"/>
+    <text x="10" y="16" fill="#34d399" font-family="monospace" font-size="10">Ping 192.168.20.25</text>
+    <text x="10" y="32" fill="#94a3b8" font-family="monospace" font-size="9">4 pacotes: 0% de perda (TTL 128)</text>
+  </g>
+</svg>

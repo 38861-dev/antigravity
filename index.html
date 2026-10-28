@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- Informações Primárias e SEO -->
+  <title>Victor Hugo — Desenvolvedor em formação</title>
+  <meta name="title" content="Victor Hugo — Desenvolvedor em formação">
+  <meta name="description" content="Portfólio de Victor Hugo. Estudante e desenvolvedor em formação com foco em desenvolvimento web, APIs com Node.js, Java POO, bancos de dados e redes de computadores.">
+  <meta name="author" content="Victor Hugo">
+  <meta name="keywords" content="Victor Hugo, Desenvolvedor, Portfólio, Node.js, JavaScript, Java, Redes de Computadores, MongoDB, MySQL, Vercel">
+  <meta name="theme-color" content="#0b0f17">
+
+  <!-- Open Graph / Redes Sociais -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://seu-portfolio.vercel.app/">
+  <meta property="og:title" content="Victor Hugo — Desenvolvedor em formação">
+  <meta property="og:description" content="Conheça meus projetos, tecnologias estudadas e minha evolução na área de programação e tecnologia.">
+  <meta property="og:image" content="assets/project-appnova.svg">
+
+  <!-- Favicon personalizado -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/favicon.svg">
+
+  <!-- Folha de Estilos Principal -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Link para pular direto ao conteúdo principal (Acessibilidade) -->
+  <a href="#main-content" class="skip-to-content">Pular para o conteúdo principal</a>
+
+  <!-- ==================== CABEÇALHO / NAVBAR ==================== -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#hero" class="brand-logo" aria-label="Victor Hugo - Início">
+        <span class="brand-symbol">&lt;</span>
+        <span class="brand-name">Victor Hugo</span>
+        <span class="brand-slash">/&gt;</span>
+        <span class="status-indicator" title="Disponível para estudos e projetos"></span>
+      </a>
+
+      <!-- Menu de Navegação Desktop -->
+      <nav class="site-nav" id="primary-nav" aria-label="Navegação Principal">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active">Início</a></li>
+          <li class="nav-item"><a href="#sobre" class="nav-link">Sobre mim</a></li>
+          <li class="nav-item"><a href="#habilidades" class="nav-link">Habilidades</a></li>
+          <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
+          <li class="nav-item"><a href="#evolucao" class="nav-link">Minha evolução</a></li>
+          <li class="nav-item"><a href="#contato" class="nav-link nav-btn-cta">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botão Menu Mobile -->
+      <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menu de navegação">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Backdrop para o menu mobile -->
+  <div class="nav-backdrop" id="nav-backdrop" aria-hidden="true"></div>
+
+  <!-- ==================== CONTEÚDO PRINCIPAL ==================== -->
+  <main id="main-content">
+
+    <!-- ==================== SEÇÃO HERO ==================== -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-container">
+        
+        <!-- Coluna de Texto e Apresentação -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="hero-badge-pulse"></span>
+            <span class="hero-badge-text">Desenvolvimento &amp; Tecnologia</span>
+          </div>
+
+          <h1 class="hero-name">Victor Hugo</h1>
+          <h2 class="hero-title">Desenvolvedor em formação</h2>
+
+          <p class="hero-description">
+            Estou desenvolvendo minhas habilidades em programação e tecnologia por meio de estudos e projetos práticos. Aqui compartilho um pouco do que estou aprendendo e das soluções que venho construindo.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projetos" class="btn btn-primary">
+              <svg class="btn-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+              <span>Ver meus projetos</span>
+            </a>
+
+            <a href="#contato" class="btn btn-secondary">
+              <svg class="btn-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>Entrar em contato</span>
+            </a>
+          </div>
+
+          <!-- Linha de tecnologias rápidas estudadas -->
+          <div class="hero-tech-pills" aria-label="Principais tecnologias estudadas">
+            <span class="tech-pill-label">Foco:</span>
+            <span class="tech-pill">JavaScript</span>
+            <span class="tech-pill">Node.js</span>
+            <span class="tech-pill">MongoDB</span>
+            <span class="tech-pill">Java</span>
+            <span class="tech-pill">Redes</span>
+          </div>
+        </div>
+
+        <!-- Coluna Visual: Composição Gráfica Interativa de Código/Terminal -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="code-window">
+            <div class="window-header">
+              <div class="window-controls">
+                <span class="control-dot close"></span>
+                <span class="control-dot minimize"></span>
+                <span class="control-dot expand"></span>
+              </div>
+              <div class="window-title">victor-hugo@dev: ~/perfil.json</div>
+              <button class="window-copy-btn" id="btn-copy-code" title="Copiar estrutura JSON" aria-label="Copiar código JSON">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span id="copy-code-text">Copiar</span>
+              </button>
+            </div>
+            
+            <div class="window-body">
+              <pre class="code-block"><code><span class="code-punct">{</span>
+  <span class="code-key">"desenvolvedor"</span><span class="code-punct">:</span> <span class="code-string">"Victor Hugo"</span><span class="code-punct">,</span>
+  <span class="code-key">"perfil"</span><span class="code-punct">:</span> <span class="code-string">"Desenvolvedor em formação"</span><span class="code-punct">,</span>
+  <span class="code-key">"focoTecnico"</span><span class="code-punct">:</span> <span class="code-punct">[</span>
+    <span class="code-string">"Desenvolvimento Web (HTML, CSS, JS)"</span><span class="code-punct">,</span>
+    <span class="code-string">"APIs RESTful com Node.js"</span><span class="code-punct">,</span>
+    <span class="code-string">"Programação Orientada a Objetos com Java"</span><span class="code-punct">,</span>
+    <span class="code-string">"Bancos de Dados (MongoDB &amp; MySQL)"</span><span class="code-punct">,</span>
+    <span class="code-string">"Redes, Sub-redes e VLANs"</span>
+  <span class="code-punct">]</span><span class="code-punct">,</span>
+  <span class="code-key">"metodologia"</span><span class="code-punct">:</span> <span class="code-string">"Aprender construindo projetos reais"</span><span class="code-punct">,</span>
+  <span class="code-key">"versionamento"</span><span class="code-punct">:</span> <span class="code-string">"Git &amp; GitHub"</span><span class="code-punct">,</span>
+  <span class="code-key">"disponivelParaAprender"</span><span class="code-punct">:</span> <span class="code-bool">true</span>
+<span class="code-punct">}</span></code></pre>
+            </div>
+
+            <div class="window-footer">
+              <span class="terminal-prompt">$</span>
+              <span class="terminal-cmd">node app.js --status</span>
+              <span class="terminal-status-ok">✔ pronto para colaborar</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SEÇÃO SOBRE MIM ==================== -->
+    <section class="section about-section" id="sobre">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">// 01. Apresentação</span>
+          <h2 class="section-title">Sobre mim</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Texto Biográfico Natural -->
+          <div class="about-text-column">
+            <p class="about-paragraph">
+              Sou estudante e desenvolvedor em formação, focado em compreender os princípios fundamentais da computação e da programação. Meu objetivo é transformar a curiosidade teórica em projetos funcionais, entendendo o que acontece em cada camada: desde a interface que o usuário vê até a infraestrutura de rede e a persistência dos dados no banco.
+            </p>
+            <p class="about-paragraph">
+              Tenho direcionado meus estudos práticos para o desenvolvimento de software, construção de APIs com Node.js, lógica orientada a objetos em Java e administração de redes. Não busco pular etapas: dedico tempo para aprender a estruturar soluções organizadas, utilizar controle de versão com Git e entender a arquitetura dos sistemas que construo.
+            </p>
+            <p class="about-paragraph">
+              Gosto de analisar problemas técnicos, documentar meus testes e aprimorar cada projeto conforme descubro melhores ferramentas e padrões de desenvolvimento.
+            </p>
+
+            <div class="about-highlights-list">
+              <div class="highlight-item">
+                <span class="highlight-check">✔</span>
+                <span>Foco em código limpo, semântico e estruturado</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-check">✔</span>
+                <span>Interesse integrado entre software, banco de dados e redes</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-check">✔</span>
+                <span>Evolução contínua por meio de projetos práticos e acadêmicos</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cards das Áreas de Interesse Real -->
+          <div class="about-cards-column">
+            <div class="interest-card">
+              <div class="interest-icon-box">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div class="interest-info">
+                <h3 class="interest-title">Desenvolvimento de Software</h3>
+                <p class="interest-desc">Criação de páginas funcionais com HTML, CSS e JavaScript, e desenvolvimento de APIs em Node.js com arquitetura REST.</p>
+              </div>
+            </div>
+
+            <div class="interest-card">
+              <div class="interest-icon-box">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16.5 9.4 7.55 4.24a1.78 1.78 0 0 0-2.5 1.55v12.42a1.78 1.78 0 0 0 2.5 1.55L16.5 14.6a1.78 1.78 0 0 0 0-3.2z"></path>
+                  <circle cx="18" cy="12" r="3"></circle>
+                </svg>
+              </div>
+              <div class="interest-info">
+                <h3 class="interest-title">Programação Orientada a Objetos</h3>
+                <p class="interest-desc">Compreensão e aplicação prática de classes, encapsulamento, herança, polimorfismo e interfaces utilizando Java.</p>
+              </div>
+            </div>
+
+            <div class="interest-card">
+              <div class="interest-icon-box">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <div class="interest-info">
+                <h3 class="interest-title">Bancos de Dados</h3>
+                <p class="interest-desc">Persistência e modelagem de dados utilizando MongoDB em projetos no modelo de documentos e MySQL para fundamentos relacionais.</p>
+              </div>
+            </div>
+
+            <div class="interest-card">
+              <div class="interest-icon-box">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <div class="interest-info">
+                <h3 class="interest-title">Redes de Computadores</h3>
+                <p class="interest-desc">Divisão de sub-redes IPv4, configuração de VLANs, roteamento e simulação de infraestruturas no Cisco Packet Tracer.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SEÇÃO HABILIDADES ==================== -->
+    <section class="section skills-section" id="habilidades">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">// 02. Conhecimentos</span>
+          <h2 class="section-title">Habilidades Técnicas</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <p class="skills-intro">
+          Tecnologias organizadas por área de aplicação prática e foco de estudo. Diferencio o que já utilizei na construção de projetos daquilo que estou aprofundando conceitualmente.
+        </p>
+
+        <!-- Legenda de Status -->
+        <div class="skills-legend" aria-label="Legenda das habilidades">
+          <div class="legend-item">
+            <span class="legend-badge badge-practical">Prática em projetos</span>
+            <span class="legend-desc">Implementado em aplicações funcionais</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-badge badge-study">Estudos &amp; Fundamentação</span>
+            <span class="legend-desc">Exercícios, teoria e laboratórios</span>
+          </div>
+        </div>
+
+        <!-- Grade de Categorias de Habilidades -->
+        <div class="skills-grid">
+
+          <!-- Card 1: Frontend -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-cat-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="3" y1="9" x2="21" y2="9"></line>
+                  <line x1="9" y1="21" x2="9" y2="9"></line>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Frontend &amp; Interface</h3>
+                <span class="skill-cat-badge badge-practical">Prática em projetos</span>
+              </div>
+            </div>
+            <p class="skill-cat-desc">
+              Construção de páginas com código semântico, estilização com CSS moderno e manipulação do DOM com JavaScript puro.
+            </p>
+            <div class="skill-tags">
+              <span class="skill-tag">HTML5 Semântico</span>
+              <span class="skill-tag">CSS3 (Grid &amp; Flexbox)</span>
+              <span class="skill-tag">JavaScript (ES6+)</span>
+              <span class="skill-tag">Manipulação do DOM</span>
+              <span class="skill-tag">Design Responsivo</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Backend & APIs -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-cat-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 17l6-6-6-6"></path>
+                  <path d="M12 19h8"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Backend &amp; APIs</h3>
+                <span class="skill-cat-badge badge-practical">Prática em projetos</span>
+              </div>
+            </div>
+            <p class="skill-cat-desc">
+              Criação de rotas, middlewares e serviços backend para receber requisições e responder com dados em JSON.
+            </p>
+            <div class="skill-tags">
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Express</span>
+              <span class="skill-tag">APIs RESTful</span>
+              <span class="skill-tag">Operações CRUD</span>
+              <span class="skill-tag">Estruturação de Rotas</span>
+            </div>
+          </div>
+
+          <!-- Card 3: Bancos de Dados -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-cat-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Bancos de Dados</h3>
+                <span class="skill-cat-badge badge-practical">Prática &amp; Estudo</span>
+              </div>
+            </div>
+            <p class="skill-cat-desc">
+              Armazenamento em coleções de documentos com MongoDB em projetos e modelagem de tabelas relacionais em MySQL.
+            </p>
+            <div class="skill-tags">
+              <span class="skill-tag">MongoDB (NoSQL)</span>
+              <span class="skill-tag">Mongoose / Documentos</span>
+              <span class="skill-tag">MySQL (Relacional)</span>
+              <span class="skill-tag">Consultas SQL</span>
+              <span class="skill-tag">Modelagem Básica</span>
+            </div>
+          </div>
+
+          <!-- Card 4: Java e POO -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-cat-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Java &amp; POO</h3>
+                <span class="skill-cat-badge badge-study">Estudos &amp; Exercícios</span>
+              </div>
+            </div>
+            <p class="skill-cat-desc">
+              Fundamentação no paradigma orientado a objetos, tipos estáticos, métodos, hierarquia de classes e contratos.
+            </p>
+            <div class="skill-tags">
+              <span class="skill-tag">Java SE</span>
+              <span class="skill-tag">Classes e Objetos</span>
+              <span class="skill-tag">Encapsulamento</span>
+              <span class="skill-tag">Herança &amp; Polimorfismo</span>
+              <span class="skill-tag">Interfaces</span>
+            </div>
+          </div>
+
+          <!-- Card 5: Redes de Computadores -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-cat-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Redes de Computadores</h3>
+                <span class="skill-cat-badge badge-study">Prática em Laboratório</span>
+              </div>
+            </div>
+            <p class="skill-cat-desc">
+              Segmentação e configuração de redes locais no Cisco Packet Tracer com cálculo de sub-redes e testes de tráfego.
+            </p>
+            <div class="skill-tags">
+              <span class="skill-tag">Cisco Packet Tracer</span>
+              <span class="skill-tag">Sub-redes IPv4 / VLSM</span>
+              <span class="skill-tag">VLANs (802.1Q)</span>
+              <span class="skill-tag">Switches &amp; Roteadores</span>
+              <span class="skill-tag">Gateways &amp; Ping</span>
+            </div>
+          </div>
+
+          <!-- Card 6: Ferramentas & Deploy -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-cat-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="18" cy="18" r="3"></circle>
+                  <circle cx="6" cy="6" r="3"></circle>
+                  <path d="M13 6h3a2 2 0 0 1 2 2v7"></path>
+                  <line x1="6" y1="9" x2="6" y2="21"></line>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Ferramentas &amp; Deploy</h3>
+                <span class="skill-cat-badge badge-practical">Prática em projetos</span>
+              </div>
+            </div>
+            <p class="skill-cat-desc">
+              Fluxo diário de versionamento com commits semânticos, repositórios remotos e publicação de aplicações.
+            </p>
+            <div class="skill-tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">Vercel</span>
+              <span class="skill-tag">Terminal / PowerShell</span>
+              <span class="skill-tag">VS Code</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SEÇÃO PROJETOS ==================== -->
+    <section class="section projects-section" id="projetos">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">// 03. Portfólio</span>
+          <h2 class="section-title">Projetos</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <p class="projects-intro">
+          Aplicações, exercícios práticos e configurações de infraestrutura desenvolvidos durante meus estudos. Cada card reflete trabalhos reais em andamento ou consolidados.
+        </p>
+
+        <!-- Filtros de Projetos -->
+        <div class="projects-filter-bar" role="tablist" aria-label="Filtrar projetos por categoria">
+          <button class="filter-btn active" role="tab" aria-selected="true" data-filter="all">Todos (3)</button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="web">Web &amp; APIs (1)</button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="java">Java POO (1)</button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="redes">Redes (1)</button>
+        </div>
+
+        <!-- Grade de Cards de Projetos -->
+        <div class="projects-grid">
+
+          <!-- PROJETO 1: AppNova -->
+          <article class="project-card" data-category="web">
+            <div class="project-preview-wrapper">
+              <img src="assets/project-appnova.svg" alt="Interface visual do projeto AppNova mostrando catálogo e busca" class="project-img" loading="lazy">
+              <div class="project-category-tag">Web &amp; Backend</div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-header">
+                <h3 class="project-title">AppNova — Sistema de Aplicativos</h3>
+                <span class="project-status-badge status-active">Em desenvolvimento</span>
+              </div>
+
+              <p class="project-description">
+                Sistema desenvolvido para cadastrar, visualizar, pesquisar e filtrar aplicativos por categoria. Conta com frontend dinâmico em HTML, CSS e JavaScript integrado a uma API REST construída com Node.js e banco de dados MongoDB para armazenamento dos registros.
+              </p>
+
+              <div class="project-features">
+                <span class="feature-item">✔ Busca textual e filtros por categoria</span>
+                <span class="feature-item">✔ Operações via API REST com Node.js</span>
+                <span class="feature-item">✔ Persistência de dados com MongoDB</span>
+              </div>
+
+              <div class="project-tech-stack" aria-label="Tecnologias do AppNova">
+                <span class="tech-tag">HTML5 / CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express</span>
+                <span class="tech-tag">MongoDB</span>
+              </div>
+
+              <div class="project-actions">
+                <!-- Link configurável para o GitHub do Victor -->
+                <a href="https://github.com/SEU_USUARIO/appnova" target="_blank" rel="noopener noreferrer" class="btn-project btn-project-primary" title="Visualizar repositório no GitHub (edite seu link no HTML)">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  <span>Ver no GitHub</span>
+                </a>
+
+                <!-- Demonstração / Status de Deploy -->
+                <span class="btn-project btn-project-ghost status-local" title="Demonstração funcional em ambiente local / em preparação para deploy">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  <span>Ambiente Local &amp; API</span>
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJETO 2: Projetos de Java -->
+          <article class="project-card" data-category="java">
+            <div class="project-preview-wrapper">
+              <img src="assets/project-java.svg" alt="Diagrama e estrutura de código Java Orientado a Objetos" class="project-img" loading="lazy">
+              <div class="project-category-tag">Java &amp; POO</div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-header">
+                <h3 class="project-title">Projetos e Práticas em Java</h3>
+                <span class="project-status-badge status-academic">Estudos práticos</span>
+              </div>
+
+              <p class="project-description">
+                Conjunto de implementações voltadas à consolidação da Programação Orientada a Objetos. Estruturação em pacotes, modelagem de entidades com classes abstratas e interfaces, aplicação de encapsulamento seguro e tratamento sistemático de exceções.
+              </p>
+
+              <div class="project-features">
+                <span class="feature-item">✔ Herança, polimorfismo e interfaces</span>
+                <span class="feature-item">✔ Separação por pacotes (Model / Service)</span>
+                <span class="feature-item">✔ Regras de negócio e boas práticas</span>
+              </div>
+
+              <div class="project-tech-stack" aria-label="Tecnologias do projeto Java">
+                <span class="tech-tag">Java SE</span>
+                <span class="tech-tag">POO</span>
+                <span class="tech-tag">Classes Abstratas</span>
+                <span class="tech-tag">Tratamento de Exceções</span>
+                <span class="tech-tag">JDK 17</span>
+              </div>
+
+              <div class="project-actions">
+                <!-- Link configurável para o GitHub do Victor -->
+                <a href="https://github.com/SEU_USUARIO/exercicios-java" target="_blank" rel="noopener noreferrer" class="btn-project btn-project-primary" title="Visualizar repositório no GitHub (edite seu link no HTML)">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  <span>Ver no GitHub</span>
+                </a>
+
+                <span class="btn-project btn-project-ghost status-code" title="Exercícios de lógica e modelagem orientada a objetos">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                  <span>Código &amp; Algoritmos</span>
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJETO 3: Redes de Computadores -->
+          <article class="project-card" data-category="redes">
+            <div class="project-preview-wrapper">
+              <img src="assets/project-networks.svg" alt="Topologia de rede com switches, VLANs e roteamento no Cisco Packet Tracer" class="project-img" loading="lazy">
+              <div class="project-category-tag">Infra &amp; Redes</div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-header">
+                <h3 class="project-title">Topologias e Práticas de Redes</h3>
+                <span class="project-status-badge status-simulated">Packet Tracer</span>
+              </div>
+
+              <p class="project-description">
+                Planejamento e simulação de topologias de rede corporativas no Cisco Packet Tracer. Implementação de segmentação lógica via VLANs (padrão IEEE 802.1Q), dimensionamento de sub-redes IPv4 com máscara de sub-rede variável (VLSM) e testes de conectividade.
+              </p>
+
+              <div class="project-features">
+                <span class="feature-item">✔ Segmentação com VLANs e portas de tronco</span>
+                <span class="feature-item">✔ Roteamento entre redes e gateways</span>
+                <span class="feature-item">✔ Diagnóstico com ping e comandos CLI</span>
+              </div>
+
+              <div class="project-tech-stack" aria-label="Tecnologias do projeto de redes">
+                <span class="tech-tag">Cisco Packet Tracer</span>
+                <span class="tech-tag">VLANs (802.1Q)</span>
+                <span class="tech-tag">Sub-redes IPv4</span>
+                <span class="tech-tag">Roteamento</span>
+                <span class="tech-tag">Switches Cisco</span>
+              </div>
+
+              <div class="project-actions">
+                <!-- Link configurável para o repositório de redes do Victor -->
+                <a href="https://github.com/SEU_USUARIO/praticas-redes" target="_blank" rel="noopener noreferrer" class="btn-project btn-project-primary" title="Visualizar arquivos e documentação no GitHub (edite seu link no HTML)">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  <span>Ver Arquivos (.pkt)</span>
+                </a>
+
+                <span class="btn-project btn-project-ghost status-network" title="Simulação validada em ambiente Packet Tracer">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  <span>Topologia Validada</span>
+                </span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Dica amigável de escalabilidade -->
+        <div class="projects-note">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="16" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+          </svg>
+          <span>Novos projetos serão adicionados à medida que avançar nos estudos práticos.</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SEÇÃO MINHA EVOLUÇÃO ==================== -->
+    <section class="section evolution-section" id="evolucao">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">// 04. Jornada</span>
+          <h2 class="section-title">Minha evolução</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <p class="evolution-intro">
+          Uma visão transparente das etapas que venho construindo ao longo dos meus estudos e práticas de programação.
+        </p>
+
+        <!-- Linha do Tempo da Jornada -->
+        <div class="timeline">
+
+          <!-- Etapa 1 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="marker-dot">1</span>
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-phase">Fase 1</span>
+              <h3 class="timeline-title">Fundamentos de Programação e Lógica</h3>
+              <p class="timeline-desc">
+                Início da caminhada com lógica de programação, estruturas condicionais, laços de repetição, funções e resolução sistemática de problemas algorítmicos.
+              </p>
+              <div class="timeline-tags">
+                <span>Lógica de Programação</span>
+                <span>Algoritmos</span>
+                <span>Estruturas de Dados Básicas</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Etapa 2 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="marker-dot">2</span>
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-phase">Fase 2</span>
+              <h3 class="timeline-title">Desenvolvimento de Aplicações</h3>
+              <p class="timeline-desc">
+                Criação de interfaces web interativas com HTML5 semântico, estilização com CSS moderno e manipulação dinâmica de elementos via JavaScript no frontend.
+              </p>
+              <div class="timeline-tags">
+                <span>HTML &amp; CSS Semântico</span>
+                <span>JavaScript no Navegador</span>
+                <span>Design Responsivo</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Etapa 3 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="marker-dot">3</span>
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-phase">Fase 3</span>
+              <h3 class="timeline-title">Integração com Bancos de Dados e APIs</h3>
+              <p class="timeline-desc">
+                Evolução para o desenvolvimento backend com Node.js e Express, construção de APIs REST para comunicação com o frontend e persistência de dados em MongoDB e consultas em MySQL.
+              </p>
+              <div class="timeline-tags">
+                <span>Node.js &amp; Express</span>
+                <span>MongoDB &amp; MySQL</span>
+                <span>APIs REST</span>
+                <span>POO com Java</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Etapa 4 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="marker-dot">4</span>
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-phase">Fase Atual</span>
+              <h3 class="timeline-title">Publicação, Redes e Evolução Contínua</h3>
+              <p class="timeline-desc">
+                Versionamento com Git e GitHub, publicação contínua em plataformas como Vercel, aprofundamento em arquitetura de redes de computadores e criação de novos projetos funcionais.
+              </p>
+              <div class="timeline-tags">
+                <span>Git &amp; GitHub</span>
+                <span>Deploy na Vercel</span>
+                <span>Infraestrutura de Redes</span>
+                <span>Novos Projetos</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SEÇÃO CONTATO ==================== -->
+    <section class="section contact-section" id="contato">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">// 05. Conexão</span>
+          <h2 class="section-title">Contato</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="contact-card-box">
+          
+          <div class="contact-intro-content">
+            <h3 class="contact-headline">Vamos conversar?</h3>
+            <p class="contact-lead">
+              Tem alguma ideia, sugestão ou oportunidade? Pode entrar em contato comigo. Estou sempre aberto a trocar ideias sobre tecnologia, projetos e novos aprendizados.
+            </p>
+
+            <!-- Canais Diretos -->
+            <div class="contact-methods">
+
+              <!-- GitHub -->
+              <a href="https://github.com/SEU_USUARIO" target="_blank" rel="noopener noreferrer" class="contact-method-card" title="Abrir perfil no GitHub (edite seu usuário)">
+                <div class="contact-icon github-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </div>
+                <div class="contact-details">
+                  <span class="contact-label">GitHub</span>
+                  <span class="contact-value">github.com/SEU_USUARIO</span>
+                </div>
+                <div class="contact-arrow">↗</div>
+              </a>
+
+              <!-- LinkedIn -->
+              <a href="https://linkedin.com/in/SEU_USUARIO" target="_blank" rel="noopener noreferrer" class="contact-method-card" title="Abrir perfil no LinkedIn (edite seu usuário)">
+                <div class="contact-icon linkedin-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </div>
+                <div class="contact-details">
+                  <span class="contact-label">LinkedIn</span>
+                  <span class="contact-value">linkedin.com/in/SEU_USUARIO</span>
+                </div>
+                <div class="contact-arrow">↗</div>
+              </a>
+
+              <!-- E-mail -->
+              <div class="contact-method-card copyable-email-card" id="card-email" title="Clique para copiar o e-mail">
+                <div class="contact-icon email-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-details">
+                  <span class="contact-label">E-mail</span>
+                  <span class="contact-value" id="email-address-text">seuemail@exemplo.com</span>
+                </div>
+                <button class="btn-copy-email" id="btn-copy-email" aria-label="Copiar endereço de e-mail">
+                  <span id="copy-email-label">Copiar</span>
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Formulário de Mensagem Direta -->
+          <div class="contact-form-wrapper">
+            <h4 class="form-title">Envie uma mensagem direta</h4>
+            <form id="contact-form" class="contact-form" novalidate>
+              
+              <div class="form-group">
+                <label for="form-name" class="form-label">Seu nome</label>
+                <input type="text" id="form-name" name="name" class="form-input" placeholder="Como prefere ser chamado?" required>
+                <span class="form-error" id="name-error">Por favor, informe seu nome.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email" class="form-label">Seu e-mail</label>
+                <input type="email" id="form-email" name="email" class="form-input" placeholder="seuemail@exemplo.com" required>
+                <span class="form-error" id="email-error">Por favor, informe um e-mail válido.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject" class="form-label">Assunto</label>
+                <input type="text" id="form-subject" name="subject" class="form-input" placeholder="Sobre o que gostaria de conversar?" required>
+                <span class="form-error" id="subject-error">Por favor, informe o assunto.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" class="form-label">Mensagem</label>
+                <textarea id="form-message" name="message" class="form-textarea" rows="4" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                <span class="form-error" id="message-error">Por favor, digite sua mensagem.</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit" id="btn-submit-form">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                <span>Enviar mensagem</span>
+              </button>
+
+              <div class="form-feedback" id="form-feedback" role="alert" aria-live="polite"></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== RODAPÉ ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#hero" class="footer-brand">
+          <span class="brand-symbol">&lt;</span>Victor Hugo<span class="brand-slash"> /&gt;</span>
+        </a>
+        <p class="footer-tagline">
+          Desenvolvedor em formação • Foco em software, banco de dados e redes de computadores.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#hero">Início</a>
+        <a href="#sobre">Sobre mim</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#evolucao">Minha evolução</a>
+        <a href="#contato">Contato</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; <span id="current-year">2026</span> Victor Hugo. Construído com HTML, CSS e JavaScript puro.
+        </p>
+        <a href="#hero" class="back-to-top" aria-label="Voltar ao início da página">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+          <span>Voltar ao topo</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Principal -->
+  <script src="script.js"></script>
+</body>
+</html>
